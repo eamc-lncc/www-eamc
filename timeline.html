@@ -15,6 +15,47 @@
     <link href="css/styles.css" rel="stylesheet" />
     <!-- JQuery -->
     <script src="js/jquery.min.js"></script>
+    
+    <style>
+        .row-striped:nth-child(odd) {
+            background-color: #f8f9fa;
+        }
+        
+        .row-striped:nth-child(even) {
+            background-color: #ffffff;
+        }
+        
+        .row-striped {
+            padding: 15px 0;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .row-striped:hover {
+            background-color: #e9ecef !important;
+        }
+        
+        .cronograma-header {
+            padding: 20px 0 30px 0;
+            text-align: center;
+            border-bottom: 3px solid #000000;
+            margin-bottom: 30px;
+        }
+        
+        .cronograma-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+        
+        .cronograma-header p {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column">
@@ -22,7 +63,7 @@
         <!-- Navigation -->
         <div id="nav-placeholder"></div>
 
-        <header class="py-2">
+        <!-- <header class="py-2">
             <div class="container px-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xxl-6">
@@ -36,145 +77,117 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </header> -->
+        
+        <!-- <div class="d-none"> -->
+            <!-- Título do Cronograma -->
+            <div class="container py-4">
+                <div class="cronograma-header">
+                    <h1><i class="bi bi-calendar-event me-2"></i>Cronograma</h1>
+                    <p>Datas importantes para o XX EAMC - 2027</p>
+                </div>
+            </div>
 
-        <div class="d-none">
-            <!-- Cronograma @ program.html -->
+            <!-- Cronograma -->
             <div class="container py-4 px-4 px-md-8 mb-5">
-
                 <!-- row 1 -->
                 <div class="row row-striped">
                     <div class="col-md-2 col-auto text-center">
-                        <h1 class="display-4"><span class="badge bg-secondary">18</span></h1>
+                        <h1 class="display-4"><span class="badge bg-secondary">17</span></h1>
                         <h2>AGO</h2>
                     </div>
                     <div class="col-6">
-                        <h3 class="mb-2">Abertura das submissão de trabalhos</h3>
+                        <h3 class="mb-2">Abertura das submissões de trabalhos</h3>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i> Segunda
-                            </li>
-                            <!-- <li class="list-inline-item"><i class="bi bi-clock" aria-hidden="true"></i> 
-                                12:30 PM - 2:00 PM
-                            </li> -->
+                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i> Segunda-feira</li>
                             <li class="list-inline-item"><i class="bi bi-geo-fill" aria-hidden="true"></i> Online</li>
                         </ul>
-                        
                     </div>
                 </div>
 
                 <!-- row 2 -->
-                <div class="row row-striped rounded-3">
+                <div class="row row-striped">
                     <div class="col-md-2 col-auto text-center">
-                        <h1 class="display-4"><span class="badge bg-secondary">25</span></h1>
+                        <h1 class="display-4"><span class="badge bg-secondary">09</span></h1>
                         <h2>OUT</h2>
                     </div>
                     <div class="col-6">
-                        <h3 class=" mb-2">Fim das submissões</h3>
+                        <h3 class="mb-2">Encerramento das submissões</h3>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i>
-                                Sábado
-                            </li>
-                            <!-- <li class="list-inline-item"><i class="bi bi-clock" aria-hidden="true"></i>
-                                23:59
-                            </li> -->
-                            <li class="list-inline-item"><i class="bi bi-clock" aria-hidden="true"></i>
-                                23:59
-                            </li>
+                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i> Sexta-feira</li>
+                            <li class="list-inline-item"><i class="bi bi-clock" aria-hidden="true"></i> 23:59</li>
                             <li class="list-inline-item"><i class="bi bi-geo-fill" aria-hidden="true"></i> Online</li>
                         </ul>
-                        
                     </div>
                 </div>
 
                 <!-- row 3 -->
-                <div class="row row-striped rounded-3">
+                <div class="row row-striped">
                     <div class="col-md-2 col-auto text-center">
-                        <h1 class="display-4"><span class="badge bg-secondary">24</span></h1>
+                        <h1 class="display-4"><span class="badge bg-secondary">20</span></h1>
                         <h2>NOV</h2>
                     </div>
                     <div class="col-6">
-                        <h3 class=" mb-2">Resultado preliminar</h3>
+                        <h3 class="mb-2">Divulgação do resultado preliminar de artigos e resultado final de resumos</h3>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i>
-                                Segunda
-                            </li>
-                            <!-- <li class="list-inline-item"><i class="bi bi-clock" aria-hidden="true"></i>
-                                23:59
-                            </li> -->
+                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i> Sexta-feira</li>
                             <li class="list-inline-item"><i class="bi bi-geo-fill" aria-hidden="true"></i> Online</li>
                         </ul>
-                        
                     </div>
                 </div>
             
                 <!-- row 4 -->
-                <div class="row row-striped rounded-3">
+                <div class="row row-striped">
                     <div class="col-md-2 col-auto text-center">
-                        <h1 class="display-4"><span class="badge bg-secondary">1</span></h1>
+                        <h1 class="display-4"><span class="badge bg-secondary">04</span></h1>
                         <h2>DEZ</h2>
                     </div>
                     <div class="col-6">
-                        <h3 class=" mb-2">Fim das correções</h3>
+                        <h3 class="mb-2">Prazo final para envio das correções de artigos</h3>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i>
-                                Segunda
-                            </li>
-                            <!-- <li class="list-inline-item"><i class="bi bi-clock" aria-hidden="true"></i>
-                                23:59
-                            </li> -->
+                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i> Sexta-feira</li>
+                            <li class="list-inline-item"><i class="bi bi-clock" aria-hidden="true"></i> 23:59</li>
                             <li class="list-inline-item"><i class="bi bi-geo-fill" aria-hidden="true"></i> Online</li>
                         </ul>
-                        
                     </div>
+                </div>
 
-                    <!-- row 5 -->
-                <div class="row row-striped rounded-3">
+                <!-- row 5 -->
+                <div class="row row-striped">
                     <div class="col-md-2 col-auto text-center">
-                        <h1 class="display-4"><span class="badge bg-secondary">8</span></h1>
+                        <h1 class="display-4"><span class="badge bg-secondary">07</span></h1>
                         <h2>DEZ</h2>
                     </div>
                     <div class="col-6">
-                        <h3 class=" mb-2">Divulgação do resultado final</h3>
+                        <h3 class="mb-2">Divulgação do resultado final</h3>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i>
-                                Segunda
-                            </li>
-                            <!-- <li class="list-inline-item"><i class="bi bi-clock" aria-hidden="true"></i>
-                                23:59
-                            </li> -->
+                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i> Segunda-feira</li>
                             <li class="list-inline-item"><i class="bi bi-geo-fill" aria-hidden="true"></i> Online</li>
                         </ul>
-                        
                     </div>
                 </div>
 
                 <!-- row 6 -->
-                <div class="row row-striped rounded-3">
+                <div class="row row-striped">
                     <div class="col-md-2 col-auto text-center">
-                        <h1 class="display-4"><span class="badge bg-secondary">19</span></h1>
-                        <h2>JAN<br />2026</h2>
+                        <h1 class="display-4"><span class="badge bg-secondary">18</span></h1>
+                        <h2>JAN<br />2027</h2>
                     </div>
                     <div class="col-6">
-                        <h3 class="mb-2">XIX EAMC 🎉</h3>
+                        <h3 class="mb-2">XX EAMC 🎉</h3>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i>
-                                19 a 22 de janeiro
-                            </li>
-                            
-                            <!--
-                            <li class="list-inline-item"><i class="bi bi-clock" aria-hidden="true"></i>
-                                09:00 - 17:00
-                            </li>
-                            -->
-                            
-                            <li class="list-inline-item"><i class="bi bi-geo-fill" aria-hidden="true"></i> Presencial e Online</li>
+                            <li class="list-inline-item"><i class="bi bi-calendar-check" aria-hidden="true"></i> 18 a 22 de janeiro</li>
+                            <li class="list-inline-item"><i class="bi bi-geo-fill" aria-hidden="true"></i> Presencial e Online <span class="text-danger">*</span></li>
                         </ul>
-                        
+                        <div class="col-12">
+                            <p class="text-muted small">
+                                <span class="text-danger">*</span> As apresentações de trabalhos ocorrerão exclusivamente de forma presencial.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </div>
+        <!-- </div> -->
 
     </main>
 
